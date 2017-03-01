@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ItemBox from 'Client/js/components/waterfall/ItemBox'
+import ItemBox from './ItemBox'
 
 Array.prototype.minValue = function() {
   let maxIndex = 0
