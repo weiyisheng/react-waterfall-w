@@ -7,7 +7,7 @@ Pinterst like Waterfall ( React Component).
 
 ## how to use
 ```javascript
-import Waterfall from 'react-waterfall-w' <br />
+import Waterfall from 'react-waterfall-w'
 class example extends React.Component {
   render() {
     return (
