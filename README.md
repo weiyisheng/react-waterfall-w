@@ -6,18 +6,18 @@ Pinterst like Waterfall ( React Component).
 `npm install react-waterall-w --save`
 
 ## how to use
-`import Waterfall from 'react-waterfall-w'
+```javascript
+import Waterfall from 'react-waterfall-w' <br />
 class example extends React.Component {
   render() {
     return (
       <Waterfall
-        items={[...,the array of items]}
-        renderItem={(item, onMeasured) => {return the Element of item}}/>
+      items={[...,the array of items]}
+      renderItem={(item, onMeasured) => {return the Element of item}}/>
     )
   }
 }
-`
-
+```
 ## docs
 The Waterfall accept 2 props: items and renderItem. 
 ### items
