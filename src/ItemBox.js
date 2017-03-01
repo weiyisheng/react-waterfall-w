@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ItemBox extends React.Component {
+class ItemBox extends React.Component {
 
   render() {
     const { maxNumberOfCols, index, layout } = this.props
@@ -8,13 +8,16 @@ export default class ItemBox extends React.Component {
       : maxNumberOfCols> -1 && index < maxNumberOfCols ? {visibility: "visible", float: "left", position: "relative"}
       : {}
 
-    return (
-      <div
-        ref={e => this.itemBox = e}
-        className="waterfall-item-box"
-        style={style}>
-        {this.props.children}
-      </div>
+    return React.createElement(
+      'div',
+      {
+        ref: e => this.itemBox = e,
+        className: "waterfall-item-box",
+        style
+      },
+      this.props.children
     )
   }
 }
+
+export default ItemBox
