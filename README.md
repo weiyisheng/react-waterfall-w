@@ -1,7 +1,14 @@
 # react-waterfall-w
 react waterfal
 Pinterst like Waterfall ( React Component). 
+responce to the container change.
 **If you find some bugs, or you have some ideas, please let me know(send a issue).**
+
+## looks like: 
+![Alt text](/example3.png)
+![Alt text](/example2.png)
+![Alt text](/example1.png)
+
 ## install
 `npm install react-waterall-w --save`
 
