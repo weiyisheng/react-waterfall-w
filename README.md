@@ -1,7 +1,7 @@
 # react-waterfall-w
 react waterfal
 Pinterst like Waterfall ( React Component). 
-
+**If you find some bugs, or you have some need, please let me know(send a issue). **
 ## install
 `npm install react-waterall-w --save`
 
