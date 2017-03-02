@@ -37,3 +37,4 @@ renderItem is a function that you can use to render your own ItemComponent.The a
 1. check this out : https://github.com/weiyisheng/geminis-blog
 2. npm install
 3. npm run dev
+4. enjoy: http://localhost:3009/
