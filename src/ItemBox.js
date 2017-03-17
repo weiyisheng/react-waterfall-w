@@ -8,14 +8,12 @@ class ItemBox extends React.Component {
       : maxNumberOfCols> -1 && index < maxNumberOfCols ? {visibility: "visible", float: "left", position: "relative"}
       : {}
 
-    return React.createElement(
-      'div',
-      {
-        ref: e => this.itemBox = e,
-        className: "waterfall-item-box",
-        style
-      },
-      this.props.children
+    return (
+      <div ref={e => this.itemBox = e}
+        className="waterfall-item-box"
+        style={style}>
+        { this.props.children }
+      </div>
     )
   }
 }

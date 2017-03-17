@@ -20,5 +20,7 @@
     "react-waterfall",
     "Pinterest"
   ],
-  "scripts": {}
+  "scripts": {
+    "deploy": "babel src --out-dir lib"
+  }
 }

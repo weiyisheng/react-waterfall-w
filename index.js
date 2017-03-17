@@ -1,6 +1,6 @@
-require('./src/less/Waterfall.less')
+require('./styles/Waterfall.less')
 
-import Waterfall from './src/Waterfall'
+import Waterfall from './lib/Waterfall'
 
 
 export default Waterfall

@@ -124,35 +124,29 @@ class Waterfall extends React.Component {
     const { renderItem, items } = this.props
     const { maxNumberOfCols, childrenLayouts, containerWidth, containerHeight } = this.state
 
-    const Items = (items || []).map((item, index) => {
-      return React.createElement(
-        ItemBox,
-        {
-          index,
-          key: index,
-          layout: childrenLayouts[index],
-          maxNumberOfCols
-        },
-        renderItem(item, (width, height) => {
-          this.setChildSize({index, height, width})
-        })
-      )
-    })
-
-    return React.createElement(
-      "div",
-      {
-        className: "waterfall-cot",
-        ref: e => this.container = e
-      },
-      React.createElement(
-        "div",
-        {
-          className: "waterfall-box",
-          style: containerWidth && containerHeight ? { width: containerWidth, height: containerHeight} : null
-        },
-        Items
-      )
+    return (
+      <div className="waterfall-cot"
+        ref={e => this.container = e}>
+        <div className="waterfall-box"
+          style={containerWidth && containerHeight ? { width: containerWidth, height: containerHeight} : null}>
+          {
+            (items || []).map((item, index) => {
+              return (
+                <ItemBox index={index}
+                  key={index}
+                  layout={childrenLayouts[index]}
+                  maxNumberOfCols={maxNumberOfCols}>
+                  {
+                    renderItem(item, (width, height) => {
+                      this.setChildSize({index, height, width})
+                    })
+                  }
+                </ItemBox>
+              )
+            })
+          }
+        </div>
+      </div>
     )
   }
 }
