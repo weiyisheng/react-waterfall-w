@@ -1,7 +1,17 @@
 # react-waterfall-w
 react waterfal
 Pinterst like Waterfall ( React Component). 
+responce to the container change.
 **If you find some bugs, or you have some ideas, please let me know(send a issue).**
+
+## demo
+http://37.139.22.91:3000/
+
+## looks like: 
+![Alt text](/example3.png)
+![Alt text](/example2.png)
+![Alt text](/example1.png)
+
 ## install
 `npm install react-waterall-w --save`
 
@@ -30,3 +40,4 @@ renderItem is a function that you can use to render your own ItemComponent.The a
 1. check this out : https://github.com/weiyisheng/geminis-blog
 2. npm install
 3. npm run dev
+4. enjoy: http://localhost:3009/
