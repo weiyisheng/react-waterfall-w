@@ -10,8 +10,7 @@ class ItemBox extends React.Component {
 
     return (
       <div ref={e => this.itemBox = e}
-        className="waterfall-item-box"
-        style={style}>
+        style={{...styles.itemBox, ...style}}>
         { this.props.children }
       </div>
     )
@@ -19,3 +18,10 @@ class ItemBox extends React.Component {
 }
 
 export default ItemBox
+
+const styles = {
+  itemBox: {
+    visibility: "hidden",
+    position: "absolute"
+  }
+}

@@ -124,11 +124,13 @@ class Waterfall extends React.Component {
     const { renderItem, items } = this.props
     const { maxNumberOfCols, childrenLayouts, containerWidth, containerHeight } = this.state
 
+    const containerSize =
+      containerWidth && containerHeight ? { width: containerWidth, height: containerHeight} : {}
+
     return (
-      <div className="waterfall-cot"
+      <div style={styles.cot}
         ref={e => this.container = e}>
-        <div className="waterfall-box"
-          style={containerWidth && containerHeight ? { width: containerWidth, height: containerHeight} : null}>
+        <div style={{...styles.box, ...containerSize}}>
           {
             (items || []).map((item, index) => {
               return (
@@ -152,3 +154,15 @@ class Waterfall extends React.Component {
 }
 
 export default Waterfall
+
+const styles = {
+  cot: {
+    margin: "0 auto",
+    position: "relative"
+  },
+  box: {
+    width: "100%",
+    position: "relative",
+    margin: "auto"
+  }
+}
