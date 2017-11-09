@@ -104,6 +104,9 @@ class Waterfall extends React.Component {
 
   setChildSize({index, height, width}) {
     const { items } = this.props
+    if(index===0){
+      this.childrenSizes = {};
+    }
     this.childrenSizes = Object.assign({} , this.childrenSizes, {
       [index]: {
         width,
