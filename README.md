@@ -13,7 +13,7 @@ http://37.139.22.91:3009/
 ![Alt text](/example1.png)
 
 ## install
-`npm install react-waterall-w --save`
+`npm install react-waterfall-w --save`
 
 ## how to use
 ```javascript
